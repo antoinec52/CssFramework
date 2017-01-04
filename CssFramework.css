@@ -1,4 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@-webkit-keyframes button {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes button {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 .col1 {
   width: 8.33333%; }
 
@@ -120,7 +141,11 @@ p {
 .text-justify {
   text-align: justify; }
 
-button.btn {
+.btn,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -129,42 +154,57 @@ button.btn {
   border-radius: 3px;
   color: #112233;
   background-color: #D1D5D8;
-  margin: 5px;
   transition: 200ms ease-in-out;
   -webkit-transition: 200ms ease-in-out;
   -moz-transition: 200ms ease-in-out;
   -o-transition: 200ms ease-in-out; }
-  button.btn:hover {
+  .btn:hover, .btn:focus,
+  button:hover,
+  button:focus,
+  input[type='button']:hover,
+  input[type='button']:focus,
+  input[type='reset']:hover,
+  input[type='reset']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:focus {
+    outline: none;
     background-color: rgba(209, 213, 216, 0.8); }
+  .btn:active,
+  button:active,
+  input[type='button']:active,
+  input[type='reset']:active,
+  input[type='submit']:active {
+    -webkit-animation: button 150ms linear;
+    animation: button 150ms linear; }
 
-button.btn-block {
+.btn-block {
   width: 100%; }
 
-button.btn-square {
+.btn-square {
   border-radius: 0; }
 
-button.btn-blue {
+.btn-blue {
   background-color: #2980B9;
   color: white; }
-  button.btn-blue:hover {
+  .btn-blue:hover, .btn-blue:focus {
     background-color: rgba(41, 128, 185, 0.8); }
 
-button.btn-red {
+.btn-red {
   background-color: #FC575E;
   color: white; }
-  button.btn-red:hover {
+  .btn-red:hover, .btn-red:focus {
     background-color: rgba(252, 87, 94, 0.8); }
 
-button.btn-green {
+.btn-green {
   background-color: #27AE60;
   color: white; }
-  button.btn-green:hover {
+  .btn-green:hover, .btn-green:focus {
     background-color: rgba(39, 174, 96, 0.8); }
 
-button.btn-black {
+.btn-black {
   background-color: #112233;
   color: white; }
-  button.btn-black:hover {
+  .btn-black:hover, .btn-black:focus {
     background-color: rgba(17, 34, 51, 0.8); }
 
 html, body {

@@ -1,5 +1,9 @@
 // button basic
-button.btn
+.btn,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
     font-family: 'Roboto', sans-serif
     font-weight: 400
     font-size: 16px
@@ -8,43 +12,50 @@ button.btn
     border-radius: 3px
     color: $black
     background-color: $grey
-    margin: 5px
     +transition(200ms ease-in-out)
-    &:hover
+    &:hover,
+    &:focus
+        outline: none
         background-color: rgba($grey, 0.8)
+    &:active
+        animation: button 150ms linear
 
 // button de largeur max du block
-button.btn-block
+.btn-block
     width: 100%
 
 // button without border-radius
-button.btn-square
+.btn-square
     border-radius: 0
 
 // button blue
-button.btn-blue
+.btn-blue
     background-color: $blue
     color: white
-    &:hover
+    &:hover,
+    &:focus
         background-color: rgba($blue, 0.8)
 
 // button red
-button.btn-red
+.btn-red
     background-color: $red
     color: white
-    &:hover
+    &:hover,
+    &:focus
         background-color: rgba($red, 0.8)
 
 // button green
-button.btn-green
+.btn-green
     background-color: $green
     color: white
-    &:hover
+    &:hover,
+    &:focus
         background-color: rgba($green, 0.8)
 
 // button black
-button.btn-black
+.btn-black
     background-color: $black
     color: white
-    &:hover
+    &:hover,
+    &:focus
         background-color: rgba($black, 0.8)
