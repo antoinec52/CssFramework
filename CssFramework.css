@@ -60,7 +60,7 @@
   width: 100%;
   max-width: 1440px;
   clear: both;
-  margin: auto;
+  margin: 50px auto;
   display: block;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,6 +126,12 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  color: #112233;
+  font-size: 18px; }
+
+code {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #112233;
   font-size: 18px; }
 
@@ -206,6 +212,19 @@ input[type='submit'] {
   color: white; }
   .btn-black:hover, .btn-black:focus {
     background-color: rgba(17, 34, 51, 0.8); }
+
+code {
+  background: #D1D5D8;
+  padding: 5px; }
+
+pre {
+  background: #D1D5D8;
+  border-left: 2px solid red;
+  overflow-y: hidden; }
+  pre > code {
+    border-radius: 0;
+    display: block;
+    white-space: pre; }
 
 html, body {
   width: 100%;
