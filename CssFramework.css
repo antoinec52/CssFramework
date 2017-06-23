@@ -41,113 +41,136 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 768px) {
+      .container .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .container .col {
     max-width: 100%;
     width: 100%; }
   .container .col-1 {
     width: 8.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .col-1 {
+        width: 100%; } }
   .container .col-2 {
     width: 16.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .col-2 {
+        width: 100%; } }
   .container .col-3 {
     width: 25%; }
+    @media screen and (max-width: 768px) {
+      .container .col-3 {
+        width: 100%; } }
   .container .col-4 {
     width: 33.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .col-4 {
+        width: 100%; } }
   .container .col-5 {
     width: 41.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .col-5 {
+        width: 100%; } }
   .container .col-6 {
     width: 50%; }
+    @media screen and (max-width: 768px) {
+      .container .col-6 {
+        width: 100%; } }
   .container .col-7 {
     width: 58.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .col-7 {
+        width: 100%; } }
   .container .col-8 {
     width: 66.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .col-8 {
+        width: 100%; } }
   .container .col-9 {
     width: 75%; }
+    @media screen and (max-width: 768px) {
+      .container .col-9 {
+        width: 100%; } }
   .container .col-10 {
     width: 83.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .col-10 {
+        width: 100%; } }
   .container .col-11 {
     width: 91.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .col-11 {
+        width: 100%; } }
   .container .col-12 {
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .container .col-12 {
+        width: 100%; } }
   .container .offset-1 {
     margin-left: 8.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-1 {
+        margin-left: 0; } }
   .container .offset-2 {
     margin-left: 16.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-2 {
+        margin-left: 0; } }
   .container .offset-3 {
     margin-left: 25%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-3 {
+        margin-left: 0; } }
   .container .offset-4 {
     margin-left: 33.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-4 {
+        margin-left: 0; } }
   .container .offset-5 {
     margin-left: 41.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-5 {
+        margin-left: 0; } }
   .container .offset-6 {
     margin-left: 50%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-6 {
+        margin-left: 0; } }
   .container .offset-7 {
     margin-left: 58.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-7 {
+        margin-left: 0; } }
   .container .offset-8 {
     margin-left: 66.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-8 {
+        margin-left: 0; } }
   .container .offset-9 {
     margin-left: 75%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-9 {
+        margin-left: 0; } }
   .container .offset-10 {
     margin-left: 83.33333%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-10 {
+        margin-left: 0; } }
   .container .offset-11 {
     margin-left: 91.66667%; }
+    @media screen and (max-width: 768px) {
+      .container .offset-11 {
+        margin-left: 0; } }
   .container .offset-12 {
     margin-left: 100%; }
-
-@media screen and (max-width: 768px) {
-  .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .col-1 {
-    width: 100%; }
-  .col-2 {
-    width: 100%; }
-  .col-3 {
-    width: 100%; }
-  .col-4 {
-    width: 100%; }
-  .col-5 {
-    width: 100%; }
-  .col-6 {
-    width: 100%; }
-  .col-7 {
-    width: 100%; }
-  .col-8 {
-    width: 100%; }
-  .col-9 {
-    width: 100%; }
-  .col-10 {
-    width: 100%; }
-  .col-11 {
-    width: 100%; }
-  .col-12 {
-    width: 100%; }
-  .offset-1 {
-    margin-left: 0; }
-  .offset-2 {
-    margin-left: 0; }
-  .offset-3 {
-    margin-left: 0; }
-  .offset-4 {
-    margin-left: 0; }
-  .offset-5 {
-    margin-left: 0; }
-  .offset-6 {
-    margin-left: 0; }
-  .offset-7 {
-    margin-left: 0; }
-  .offset-8 {
-    margin-left: 0; }
-  .offset-9 {
-    margin-left: 0; }
-  .offset-10 {
-    margin-left: 0; }
-  .offset-11 {
-    margin-left: 0; }
-  .offset-12 {
-    margin-left: 0; } }
+    @media screen and (max-width: 768px) {
+      .container .offset-12 {
+        margin-left: 0; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -155,31 +178,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #112233; }
 
 h1 {
-  font-size: 4.0rem;
-  line-height: 1.2; }
+  font-size: 36px; }
 
 h2 {
-  font-size: 3.6rem;
-  line-height: 1.25; }
+  font-size: 30px; }
 
 h3 {
-  font-size: 3.0rem;
-  line-height: 1.3; }
+  font-size: 26px; }
 
 h4 {
-  font-size: 2.4rem;
-  letter-spacing: -.08rem;
-  line-height: 1.35; }
+  font-size: 24px; }
 
 h5 {
-  font-size: 1.8rem;
-  letter-spacing: -.05rem;
-  line-height: 1.5; }
+  font-size: 20px; }
 
 h6 {
-  font-size: 1.6rem;
-  letter-spacing: 0;
-  line-height: 1.4; }
+  font-size: 18px; }
 
 p {
   font-family: "Roboto", sans-serif;
@@ -271,18 +285,21 @@ input[type='submit'] {
   .btn-black:hover, .btn-black:focus {
     background-color: rgba(17, 34, 51, 0.8); }
 
-code {
-  background: #D1D5D8;
-  padding: 5px; }
-
 pre {
-  background: #D1D5D8;
-  border-left: 2px solid red;
-  overflow-y: hidden; }
-  pre code {
-    border-radius: 0;
-    display: block;
-    white-space: pre; }
+  background-color: #ECEBF3;
+  border: 1px solid #6D7275;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 16px;
+  max-height: 350px;
+  overflow-y: auto; }
+  pre .en {
+    color: #82aaff; }
+  pre .ar {
+    color: #c792ea; }
 
 html, body {
   width: 100%;
@@ -293,9 +310,9 @@ html, body {
     box-sizing: border-box; }
 
 .bloc-demo {
-  height: 50px;
+  height: 75px;
+  margin: 5px 2px;
   background-color: #0892C9;
-  border: 2px solid #05668D;
   color: #05668D;
   display: -webkit-box;
   display: -webkit-flex;
