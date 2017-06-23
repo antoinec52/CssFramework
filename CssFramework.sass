@@ -1,4 +1,4 @@
-$tablette: 768px
+$tablet: 768px
 $phone: 425px
 
 $black: #112233
@@ -10,6 +10,7 @@ $blue: #2980B9
 $font: 'Roboto', sans-serif
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400)
+
 @import 'src/_Mixins'
 @import 'src/_Animation'
 @import 'src/_Grid'
@@ -23,3 +24,16 @@ html, body
     padding: 0
     *
         box-sizing: border-box
+
+.bloc-demo
+    height: 50px
+    background-color: #0892C9
+    border: 2px solid #05668D
+    color: #05668D
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    p
+        text-align: center
+        margin: 0
