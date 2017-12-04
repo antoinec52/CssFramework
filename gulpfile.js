@@ -4,7 +4,7 @@ let gulp = require('gulp'),
     useref = require('gulp-useref'),
     uglify = require('gulp-uglify'),
     gulpif = require('gulp-if'),
-    minifyCss = require('gulp-minify-css');
+    cleanCSS = require('gulp-clean-css');
 
 // prepross scss
 gulp.task('sass', function () {
@@ -29,8 +29,8 @@ gulp.task('browserSync', function () {
 gulp.task('useref', function () {
     return gulp.src('app/*.html')
         .pipe(useref())
-        .pipe(gulpif('js/*.js', uglify()))
-        .pipe(gulpif('css/*.css', minifyCSS()))
+        .pipe(gulpif('app/js/*.js', uglify()))
+        .pipe(gulpif('app/css/*.css', cleanCSS()))
         .pipe(gulp.dest('dist'));
 });
 
