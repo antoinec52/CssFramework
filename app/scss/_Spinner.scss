@@ -1,0 +1,63 @@
+$blocSize: 100px;
+$minRadius: 25%;
+
+.block-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .spinner {
+    	width: $blocSize;
+    	height: $blocSize;
+    	animation: animate 3s infinite;
+    }
+}
+
+@keyframes animate {
+	0% {
+		border-radius: $minRadius $minRadius $minRadius $minRadius;
+		transform: rotate(0deg);
+		background: #0B132B;
+	}
+	12.5% {
+		border-radius: 50% $minRadius $minRadius $minRadius;
+		transform: rotate(45deg);
+		background: #1C2541;
+	}
+	25% {
+		border-radius: 50% 50% $minRadius $minRadius;
+		transform: rotate(90deg);
+		background: #3A506B;
+	}
+	37.5% {
+		border-radius: 50% 50% 50% $minRadius;
+		transform:rotate(135deg);
+		background:#5BC0BE;
+	}
+	50% {
+		border-radius: 50% 50% 50% 50%;
+		transform: rotate(180deg);
+		background: #5ED6C4;
+	}
+	62.5% {
+		border-radius: $minRadius 50% 50% 50%;
+		transform: rotate(225deg);
+		background: #5BC0BE;
+	}
+	75% {
+		border-radius: $minRadius $minRadius 50% 50%;
+		transform: rotate(270deg);
+		background: #3A506B;
+	}
+	87.5% {
+		border-radius: $minRadius $minRadius $minRadius 50%;
+		transform: rotate(315deg);
+		background: #1C2541;
+	}
+	100% {
+		border-radius: $minRadius $minRadius $minRadius $minRadius;
+		transform: rotate(360deg);
+		background: #0B132B;
+	}
+}

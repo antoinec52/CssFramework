@@ -4,6 +4,8 @@ $font: 'Roboto', sans-serif;
 $tablet: 768px;
 $phone: 425px;
 
+$black: #50514F;
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +13,19 @@ $phone: 425px;
 }
 
 @import '_Grid';
+@import '_Code';
+@import '_Spinner';
+@import '_Text';
+
+.sep {
+    height: 1px;
+    width: 100%;
+    background-color: $black;
+}
 
 .demo {
     height: 50px;
     background-color: #0892C9;
+    border-radius: 2px;
     color: #05668D;
 }
