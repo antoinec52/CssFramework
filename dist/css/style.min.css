@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  clear: both;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  width: 100%;
+  display: flex; }
+  .row [class^="col-"] {
+    margin-right: 1.5%;
+    display: flex; }
+    .row [class^="col-"]:last-child {
+      margin-right: 0%; }
+  .row .col-1 {
+    width: 6.95833%; }
+  .row .col-2 {
+    width: 15.41667%; }
+  .row .col-3 {
+    width: 23.875%; }
+  .row .col-4 {
+    width: 32.33333%; }
+  .row .col-5 {
+    width: 40.79167%; }
+  .row .col-6 {
+    width: 49.25%; }
+  .row .col-7 {
+    width: 57.70833%; }
+  .row .col-8 {
+    width: 66.16667%; }
+  .row .col-9 {
+    width: 74.625%; }
+  .row .col-10 {
+    width: 83.08333%; }
+  .row .col-11 {
+    width: 91.54167%; }
+  .row .col-12 {
+    width: 100%; }
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column; }
+      .row .col-1 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-2 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-3 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-4 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-5 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-6 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-7 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-8 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-9 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-10 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-11 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; }
+      .row .col-12 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1.5%; } }
+
+.demo {
+  height: 50px;
+  background-color: #0892C9;
+  color: #05668D; }
