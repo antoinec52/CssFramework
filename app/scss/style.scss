@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+$font: 'Roboto', sans-serif;
+
+$tablet: 768px;
+$phone: 425px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import '_Grid';
+
+.demo {
+    height: 50px;
+    background-color: #0892C9;
+    color: #05668D;
+}

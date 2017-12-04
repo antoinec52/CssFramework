@@ -1,0 +1,43 @@
+$col: 100% / 12;
+$grid-spacing: 1.5%;
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    clear: both;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+
+    [class^="col-"] {
+        margin-right: $grid-spacing;
+        display: flex;
+
+        &:last-child {
+            margin-right: 0%;
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: ($col * $i) - ($grid-spacing * (12 - $i) / 12);
+        }
+    }
+
+    @media screen and (max-width: $tablet)  {
+        flex-direction: column;
+
+        @for $i from 1 through 12 {
+            .col-#{$i} {
+                width: 100%;
+                margin-right: 0%;
+                margin-bottom: $grid-spacing;
+            }
+        }
+    }
+}
