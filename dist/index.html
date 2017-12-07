@@ -6,87 +6,152 @@
 
         <title>Css Framework</title>
 
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/CssFramework.min.css">
+
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- highlight js -->
+        <link rel="stylesheet" href="highlight/styles/foundation.css">
+        <script src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        <script src="js/CssFramework.min.js"></script>
     </head>
     <body>
 
         <div class="container">
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-12">
-                    <h1>Css Framework</h1>
+            <div class="row row-6">
+                <div class="col-3 demo">
+                    col-3
+                </div>
+                <div class="col-3 demo">
+                    col-3
                 </div>
             </div>
 
-            <div class="sep"></div>
-
-            <div class="row">
-                <div class="col-12">
-                    <h2>Grid</h2>
+            <div class="row row-6">
+                <div class="col-2 demo">
+                    col-2
+                </div>
+                <div class="col-2 demo">
+                    col-2
+                </div>
+                <div class="col-2 demo">
+                    col-2
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4 demo"></div>
-                <div class="col-6 demo"></div>
-                <div class="col-2 demo"></div>
+            <div class="row row-12">
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
+                <div class="col-1 demo">col-1</div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <pre>
-&lt;div <span class="elmt">class=</span><span class="class">"row"</span>&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-4"</span>&gt;&lt;/div&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-6"</span>&gt;&lt;/div&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-2"</span>&gt;&lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3 demo"></div>
-                <div class="col-3 demo"></div>
-                <div class="col-3 demo"></div>
-                <div class="col-3 demo"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <pre>
-&lt;div <span class="elmt">class=</span><span class="class">"row"</span>&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-3"</span>&gt;&lt;/div&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-3"</span>&gt;&lt;/div&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-3"</span>&gt;&lt;/div&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"col-3"</span>&gt;&lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="row">
-                <div class="col-12">
-                    <h2>Spinner</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 block-spinner">
-                    <div class="spinner"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <pre>
-&lt;div <span class="elmt">class=</span><span class="class">"col-12 block-spinner"</span>&gt;
-    &lt;div <span class="elmt">class=</span><span class="class">"spinner"</span>&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
         </div>
 
+        <style media="screen">
+            .demo {
+                background-color: #ccc;
+                border-radius: 3px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+            }
+        </style>
+
+        <!--
+        <div class="_container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row" id="grid">
+                        <div class="col-12">
+                            <h2>Grid</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 demo"></div>
+                        <div class="col-6 demo"></div>
+                        <div class="col-2 demo"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" id="code1-grid"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 demo"></div>
+                        <div class="col-3 demo"></div>
+                        <div class="col-3 demo"></div>
+                        <div class="col-3 demo"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" id="code2-grid"></div>
+                    </div>
+
+                    <div class="row" id="spinner">
+                        <div class="col-12">
+                            <h2>Spinner</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 block-spinner">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" id="code-spinner"></div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <ul>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#spinner">Spinner</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        -->
+
+        <script type="text/javascript">
+            $('#code1-grid').displayCode('html',
+                '<div class="row">'
+                + '\n   <div class="col-4"></div>'
+                + '\n   <div class="col-6"></div>'
+                + '\n   <div class="col-2"></div>'
+                + '\n</div>'
+            );
+
+            $('#code2-grid').displayCode('html',
+                '<div class="row">'
+                + '\n   <div class="col-3"></div>'
+                + '\n   <div class="col-3"></div>'
+                + '\n   <div class="col-3"></div>'
+                + '\n   <div class="col-3"></div>'
+                + '\n</div>'
+            );
+
+            $('#code-spinner').displayCode('html',
+                '<div class="col-12 block-spinner">'
+                + '\n   <div class="spinner"></div>'
+                + '\n</div>'
+            );
+        </script>
     </body>
 </html>
